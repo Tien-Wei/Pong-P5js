@@ -29,24 +29,24 @@ function draw() {
 }
 
 function keyPressed() {
-	if (key === 'a') {
+	if (key === 'w') {
 		player1.dir = -1;
-	} else if (key === 'q') {
+	} else if (key === 's') {
 		player1.dir = 1;
 	}
 
-	if (key === 'p') {
+	if (key === 'i') {
 		player2.dir = -1;
-	} else if (key === 'm') {
+	} else if (key === 'k') {
 		player2.dir = 1;
 	}
 }
 
 function keyReleased() {
-	if (key === 'a' || key === 'q') {
+	if (key === 'w' || key === 's') {
 		player1.dir = 0;
 	}
-	if (key === 'p' || key === 'm') {
+	if (key === 'i' || key === 'k') {
 		player2.dir = 0;
 	}
 }
